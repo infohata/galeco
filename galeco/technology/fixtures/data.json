@@ -1,0 +1,90 @@
+[
+{
+  "model": "technology.branch",
+  "pk": 1,
+  "fields": {
+    "name": "physics",
+    "color": "#3fa7ff",
+    "parent": null
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 2,
+  "fields": {
+    "name": "biology",
+    "color": "#7fcc00",
+    "parent": null
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 3,
+  "fields": {
+    "name": "engineering",
+    "color": "#cc7f00",
+    "parent": null
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 4,
+  "fields": {
+    "name": "economy",
+    "color": "#ffcc00",
+    "parent": null
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 5,
+  "fields": {
+    "name": "warfare",
+    "color": "#ff3f00",
+    "parent": null
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 6,
+  "fields": {
+    "name": "food production",
+    "color": "#7fcc00",
+    "parent": 2
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 1,
+  "fields": {
+    "name": "basic farming",
+    "description": "<p>Starting farming technology, allowing natural biological food production in native environment, including natural agriculture and cattle farming.</p>",
+    "base_cost": 0,
+    "level": 0,
+    "rarity": 0,
+    "starting": true,
+    "branch": 6
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 2,
+  "fields": {
+    "name": "synthetic meat",
+    "description": "<p>Allows replacement of cattle farming with more ethical, synthetic meat replacements. This technology reduces polution and improves food production efficiency.</p>",
+    "base_cost": 1000,
+    "level": 1,
+    "rarity": 100,
+    "starting": false,
+    "branch": 6
+  }
+},
+{
+  "model": "technology.dependency",
+  "pk": 1,
+  "fields": {
+    "target_technology": 2,
+    "dependency": 1
+  }
+}
+]

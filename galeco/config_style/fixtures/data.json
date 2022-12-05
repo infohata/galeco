@@ -1,0 +1,210 @@
+[
+{
+  "model": "config_style.color",
+  "pk": 1,
+  "fields": {
+    "html_code": "#000000",
+    "red": 0,
+    "green": 0,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "black",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": false,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 2,
+  "fields": {
+    "html_code": "#ffffff",
+    "red": 255,
+    "green": 255,
+    "blue": 255,
+    "alpha": "1.0000",
+    "name": "white",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": false,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 3,
+  "fields": {
+    "html_code": "#ff0000",
+    "red": 255,
+    "green": 0,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "red",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": false,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 4,
+  "fields": {
+    "html_code": "#ff3f00",
+    "red": 255,
+    "green": 63,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "error",
+    "used_as_main_system": true,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 5,
+  "fields": {
+    "html_code": "#cccccc",
+    "red": 204,
+    "green": 204,
+    "blue": 204,
+    "alpha": "1.0000",
+    "name": "neutral",
+    "used_as_main_system": true,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 6,
+  "fields": {
+    "html_code": "#fefefe",
+    "red": 254,
+    "green": 254,
+    "blue": 254,
+    "alpha": "0.7500",
+    "name": null,
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": false,
+    "used_for_logo_designs": false
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 7,
+  "fields": {
+    "html_code": "#fdfdfd",
+    "red": 253,
+    "green": 253,
+    "blue": 253,
+    "alpha": "0.5000",
+    "name": null,
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": false,
+    "used_for_logo_designs": false
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 8,
+  "fields": {
+    "html_code": "#fcfcfc",
+    "red": 252,
+    "green": 252,
+    "blue": 252,
+    "alpha": "0.2500",
+    "name": null,
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": false,
+    "used_for_logo_designs": false
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 9,
+  "fields": {
+    "html_code": "#ffcc00",
+    "red": 255,
+    "green": 204,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "warning",
+    "used_as_main_system": true,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 10,
+  "fields": {
+    "html_code": "#3fa7ff",
+    "red": 63,
+    "green": 167,
+    "blue": 255,
+    "alpha": "1.0000",
+    "name": "indigo",
+    "used_as_main_system": true,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 11,
+  "fields": {
+    "html_code": "#cc00a7",
+    "red": 204,
+    "green": 0,
+    "blue": 167,
+    "alpha": "1.0000",
+    "name": "politics",
+    "used_as_main_system": true,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 12,
+  "fields": {
+    "html_code": "#7fcc00",
+    "red": 127,
+    "green": 204,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "success",
+    "used_as_main_system": true,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 13,
+  "fields": {
+    "html_code": "#cc7f00",
+    "red": 204,
+    "green": 127,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "dark-orange",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+}
+]
