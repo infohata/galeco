@@ -7,8 +7,8 @@ class BranchAdmin(admin.ModelAdmin):
     list_filter = ('parent', )
 
 class TechnologyAdmin(admin.ModelAdmin):
-    list_display = ('get_formatted', 'base_cost', 'rarity', )
-    list_filter = ('branch', )
+    list_display = ('get_formatted', 'level', 'base_cost', 'rarity', )
+    list_filter = ('branch', 'level', )
 
 
 admin.site.register(models.Branch, BranchAdmin)

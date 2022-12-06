@@ -206,5 +206,53 @@
     "used_for_tech_categories": true,
     "used_for_logo_designs": true
   }
+},
+{
+  "model": "config_style.color",
+  "pk": 14,
+  "fields": {
+    "html_code": "#001f5f",
+    "red": 0,
+    "green": 31,
+    "blue": 95,
+    "alpha": "1.0000",
+    "name": "very-dark-blue",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 15,
+  "fields": {
+    "html_code": "#1f3f7f",
+    "red": 31,
+    "green": 63,
+    "blue": 127,
+    "alpha": "1.0000",
+    "name": "dark-blue",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
+},
+{
+  "model": "config_style.color",
+  "pk": 16,
+  "fields": {
+    "html_code": "#bf1f00",
+    "red": 191,
+    "green": 31,
+    "blue": 0,
+    "alpha": "1.0000",
+    "name": "dark-blood-red",
+    "used_as_main_system": false,
+    "used_for_ui_schemes": true,
+    "used_for_tech_categories": true,
+    "used_for_logo_designs": true
+  }
 }
 ]

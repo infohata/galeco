@@ -38,8 +38,8 @@ class Branch(models.Model):
 class Technology(models.Model):
     name = models.CharField(_("name"), max_length=120)
     description = HTMLField(_("description"), max_length=4000)
-    base_cost = models.PositiveSmallIntegerField(_("base cost"), default=1000, db_index=True)
-    level = models.SmallIntegerField(_("level"), default=0)
+    base_cost = models.PositiveIntegerField(_("base cost"), default=1000, db_index=True)
+    level = models.PositiveSmallIntegerField(_("level"), db_index=True, default=0, choices=((x, x) for x in range(11)))
     rarity = models.PositiveIntegerField(_("rarity"), default=100)
     starting = models.BooleanField(_("starting technology"), default=False)
     branch = models.ForeignKey(
@@ -50,7 +50,7 @@ class Technology(models.Model):
     )
 
     class Meta:
-        ordering = ('base_cost', 'rarity', 'id',)
+        ordering = ('level', 'base_cost', 'rarity', 'id',)
         verbose_name = _("technology")
         verbose_name_plural = _("technologies")
 
@@ -96,12 +96,23 @@ class Catalyst(models.Model):
         on_delete=models.CASCADE,
         related_name='catalysts',
     )
-    # TODO: link when implementing events app
-    event = models.CharField(_("event"), max_length=250, blank=True, null=True)
     rarity_base_modifier = models.IntegerField(_("rarity base modifier"), default=0)
     rarity_divisive_modifier = models.DecimalField(_("rarity divisive modifier"), max_digits=5, decimal_places=4, default=1)
+    # TODO: link when implementing events app
+    event = models.CharField(_("event"), max_length=250, blank=True, null=True)
+    research_progress_fixed = models.IntegerField(_("fixed research progress"), default=0)
+    research_progress_partial = models.DecimalField(_("partial research progress"), max_digits=5, decimal_places=4, default=0)
+    has_tech = models.ForeignKey(
+        Technology, 
+        verbose_name=_("has technology"), 
+        on_delete=models.CASCADE,
+        null=True, blank=True,
+    )
 
     class Meta:
         ordering = ('technology', 'id',)
         verbose_name = _("catalyst")
         verbose_name_plural = _("catalysts")
+
+    def __str__(self) -> str:
+        return f"{self.technology}: ({self.technology.rarity} - {self.rarity_base_modifier}) / {self.rarity_divisive_modifier}"

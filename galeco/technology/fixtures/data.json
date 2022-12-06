@@ -54,6 +54,42 @@
   }
 },
 {
+  "model": "technology.branch",
+  "pk": 7,
+  "fields": {
+    "name": "computing and communications",
+    "color": "#3fa7ff",
+    "parent": 1
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 8,
+  "fields": {
+    "name": "spaceflight",
+    "color": "#1f3f7f",
+    "parent": 3
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 9,
+  "fields": {
+    "name": "construction",
+    "color": "#cccccc",
+    "parent": 3
+  }
+},
+{
+  "model": "technology.branch",
+  "pk": 10,
+  "fields": {
+    "name": "industry",
+    "color": "#bf1f00",
+    "parent": 3
+  }
+},
+{
   "model": "technology.technology",
   "pk": 1,
   "fields": {
@@ -80,11 +116,155 @@
   }
 },
 {
+  "model": "technology.technology",
+  "pk": 3,
+  "fields": {
+    "name": "terrestrial internet",
+    "description": "<p>Global computer network, allowing all population to be connected and communicate freely.</p>",
+    "base_cost": 0,
+    "level": 0,
+    "rarity": 0,
+    "starting": true,
+    "branch": 7
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 4,
+  "fields": {
+    "name": "Starlink",
+    "description": "<p>Low latency global satellite network, allowing full global communication coverage around and near home planet.</p>",
+    "base_cost": 1000,
+    "level": 1,
+    "rarity": 100,
+    "starting": false,
+    "branch": 7
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 5,
+  "fields": {
+    "name": "basic rocketry",
+    "description": "<p>Chemical and Ion propulsion systems, non-reusable orbital rockets.</p>",
+    "base_cost": 0,
+    "level": 0,
+    "rarity": 0,
+    "starting": true,
+    "branch": 8
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 6,
+  "fields": {
+    "name": "reusable rockets",
+    "description": "<p>The perfection of advanced vertical propulsion landing, full-flow stage combustion engines and reentry heat management systems allowed the creation of a fully r eusable chemical rocket.</p>",
+    "base_cost": 1000,
+    "level": 1,
+    "rarity": 100,
+    "starting": false,
+    "branch": 8
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 7,
+  "fields": {
+    "name": "modular space stations",
+    "description": "<p>Simple space stations, launched via multiple vehicles and assembled in orbit.</p>",
+    "base_cost": 0,
+    "level": 0,
+    "rarity": 0,
+    "starting": true,
+    "branch": 9
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 8,
+  "fields": {
+    "name": "artificial gravity",
+    "description": "<p>Larger scale orbital space stations, allowing creation of artificial gravity.</p>",
+    "base_cost": 2000,
+    "level": 1,
+    "rarity": 200,
+    "starting": false,
+    "branch": 9
+  }
+},
+{
+  "model": "technology.technology",
+  "pk": 9,
+  "fields": {
+    "name": "surface mining",
+    "description": "<p>Surface mining and basic material processing.</p>",
+    "base_cost": 0,
+    "level": 0,
+    "rarity": 0,
+    "starting": true,
+    "branch": 10
+  }
+},
+{
   "model": "technology.dependency",
   "pk": 1,
   "fields": {
     "target_technology": 2,
     "dependency": 1
+  }
+},
+{
+  "model": "technology.dependency",
+  "pk": 2,
+  "fields": {
+    "target_technology": 4,
+    "dependency": 3
+  }
+},
+{
+  "model": "technology.dependency",
+  "pk": 3,
+  "fields": {
+    "target_technology": 6,
+    "dependency": 5
+  }
+},
+{
+  "model": "technology.dependency",
+  "pk": 4,
+  "fields": {
+    "target_technology": 7,
+    "dependency": 5
+  }
+},
+{
+  "model": "technology.dependency",
+  "pk": 5,
+  "fields": {
+    "target_technology": 8,
+    "dependency": 6
+  }
+},
+{
+  "model": "technology.dependency",
+  "pk": 6,
+  "fields": {
+    "target_technology": 8,
+    "dependency": 7
+  }
+},
+{
+  "model": "technology.catalyst",
+  "pk": 1,
+  "fields": {
+    "technology": 4,
+    "rarity_base_modifier": 0,
+    "rarity_divisive_modifier": "1.2000",
+    "event": null,
+    "research_progress_fixed": 0,
+    "research_progress_partial": "0.2000",
+    "has_tech": 4
   }
 }
 ]
